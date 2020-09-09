@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Team list-->
+    <dimen name="team_list_margin">16dp</dimen>
+    <dimen name="team_list_name_size">22sp</dimen>
+    <dimen name="team_win_loss_size">20sp</dimen>
+    <!-- Team Detail-->
+    <dimen name="team_player_margin_size">15dp</dimen>
+    <dimen name="team_player_name_size">15sp</dimen>
+    <dimen name="team_player_margin">10dp</dimen>
+</resources>

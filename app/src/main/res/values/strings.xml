@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NbaAssignment</string>
+
+    <!-- Genral -->
+    <string name="sharedTeamName">sharedTeamName</string>
+    <string name="sharedTeamWinLoss">sharedTeamWinLoss</string>
+
+    <!-- Team list -->
+    <string name="team_win_loss">%d | %d</string>
+    <string name="team_filter_name">Sort by TeamName</string>
+    <string name="team_filter_win">Sort by Win DES</string>
+    <string name="team_filter_loss">Sort by Loss ASC</string>
+
+    <!-- Team page -->
+
+</resources>

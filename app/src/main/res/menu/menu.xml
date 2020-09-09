@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/filter_team_name"
+        android:title="@string/team_filter_name" />
+    <item
+        android:id="@+id/filter_team_win"
+        android:title="@string/team_filter_win" />
+    <item
+        android:id="@+id/filter_team_loss"
+        android:title="@string/team_filter_loss" />
+</menu>
