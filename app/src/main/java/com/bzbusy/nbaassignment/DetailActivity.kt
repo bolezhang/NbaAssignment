@@ -14,10 +14,7 @@ import com.google.gson.reflect.TypeToken
 import kotlinx.android.synthetic.main.activity_team_detail.*
 import java.util.*
 
-class TeamDetailActivity : AppCompatActivity() {
-    companion object {
-        private const val TAG = "TeamDetailActivity"
-    }
+class DetailActivity : AppCompatActivity() {
     private lateinit var mNbaTeamPlayerAdapter: NbaTeamPlayerAdapter
     private lateinit var mNbaTeamPlayerPresenter: NbaTeamPlayerPresenter
 

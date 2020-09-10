@@ -10,6 +10,9 @@
     <string name="team_filter_name">Sort by TeamName</string>
     <string name="team_filter_win">Sort by Win DES</string>
     <string name="team_filter_loss">Sort by Loss ASC</string>
+    <string name="team_sort_by_name">Team sort by name</string>
+    <string name="team_sort_by_win">Team sort by win</string>
+    <string name="team_sort_by_loss">Team sort by loss</string>
 
     <!-- Team page -->
 

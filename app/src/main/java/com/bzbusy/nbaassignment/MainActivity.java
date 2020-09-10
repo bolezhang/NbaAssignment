@@ -69,10 +69,10 @@ public class MainActivity extends AppCompatActivity implements OnRecyclerViewCli
         Log.d(TAG, "onRecyclerViewClick called");
 
         final NbaTeam nbaTeam = (NbaTeam) clickedObject;
-        final Intent intent = new Intent(this, TeamDetailActivity.class);
+        final Intent intent = new Intent(this, DetailActivity.class);
         intent.putExtra(Constant.EVENT_EXTRA, new Gson().toJson(nbaTeam));
 
-        // Add scene transition
+        // Add scene transition animation
         final Pair<View, String> p1 = Pair.create(transitionView1, getString(R.string.sharedTeamName));
         final Pair<View, String> p2 = Pair.create(transitionView2, getString(R.string.sharedTeamWinLoss));
         final ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, p1, p2);
@@ -92,12 +92,15 @@ public class MainActivity extends AppCompatActivity implements OnRecyclerViewCli
         switch (item.getItemId()) {
             case R.id.filter_team_name:
                 refreshUI(Constant.Sort.TeamName);
+                Toast.makeText(MainActivity.this, getString(R.string.team_sort_by_name), Toast.LENGTH_LONG).show();
                 return true;
             case R.id.filter_team_win:
                 refreshUI(Constant.Sort.Wins);
+                Toast.makeText(MainActivity.this, getString(R.string.team_sort_by_win), Toast.LENGTH_LONG).show();
                 return true;
             case R.id.filter_team_loss:
                 refreshUI(Constant.Sort.Losses);
+                Toast.makeText(MainActivity.this, getString(R.string.team_sort_by_loss), Toast.LENGTH_LONG).show();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

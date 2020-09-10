@@ -7,8 +7,8 @@ import android.util.Log;
 
 import com.bzbusy.nbaassignment.MainActivity;
 import com.bzbusy.nbaassignment.Util.Constant;
-import com.bzbusy.nbaassignment.model.NbaTeam;
 import com.bzbusy.nbaassignment.listener.IServerCallback;
+import com.bzbusy.nbaassignment.model.NbaTeam;
 import com.bzbusy.nbaassignment.server.NbaServerClient;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
@@ -59,7 +59,8 @@ public class NbaTeamListPresenter {
                 Log.d(TAG, "onServerResultDelivered, responseCode = " + responseCode + ", response = " + response);
 
                 final JsonArray jsonArray = new JsonParser().parse(response).getAsJsonArray();
-                final ArrayList<NbaTeam> teamList = new Gson().fromJson(jsonArray, new TypeToken<List<NbaTeam>>() {}.getType());
+                final ArrayList<NbaTeam> teamList = new Gson().fromJson(jsonArray, new TypeToken<List<NbaTeam>>() {
+                }.getType());
                 new Handler(Looper.getMainLooper()).post(new Runnable() {
                     @Override
                     public void run() {

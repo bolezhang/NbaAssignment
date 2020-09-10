@@ -66,7 +66,7 @@ public class NbaTeamListAdapter extends RecyclerView.Adapter<NbaTeamListAdapter.
         this.teams = Util.sortTeamsByKeys(teams, sort);
     }
 
-    class NbaListViewHolder extends RecyclerView.ViewHolder {
+    public class NbaListViewHolder extends RecyclerView.ViewHolder {
         private NbaTeam currentTeam;
         private int holderPosition;
         private TextView tvNbaTeamName;

@@ -31,7 +31,7 @@ public class NbaServerClient {
             synchronized (NbaServerClient.class) {
                 if (soleInstance == null) {
                     soleInstance = new NbaServerClient();
-                    soleInstance.initCache(context);
+                    soleInstance.initCache(context.getApplicationContext());
                 }
             }
         }
