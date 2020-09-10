@@ -3,6 +3,6 @@ BoleZhang
 I used MVP pattern for the assignment
 Two activity for Nba List & Detail screen, transition with animation
 Support sort team list by name, win and loss
-Support network caching. Will fetch the list from cache when offline or when it's the same request
+Support network caching. Will fetch the list from cache when offline or when it's the same request online
 Support local unit test
 Support UI test using Espresso library
