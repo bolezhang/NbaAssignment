@@ -1,7 +1,10 @@
-BoleZhang
+My name is BoleZhang
 
-I used MVP pattern for the assignment
-Two activity for Nba List & Detail screen, transition with animation
+I'm glad to have a chance to do this assignment.
+
+I used MVP pattern for the assignment (MVVM would be a better way, but I'm more comfortable using MVP for this assignment)
+The code is writen in a mix of Java & Kotlin to prove that I'm able to use both
+Two activities are used for Nba List & Detail screen, transition with animation
 Support sort team list by name, win and loss
 Support network caching. Will fetch the list from cache when offline or when it's the same request online
 Support local unit test
